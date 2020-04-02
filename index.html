@@ -24,7 +24,8 @@
 	 			color: #5f6368;
 	 			font-size: 22px;
 	 			margin-bottom: 0px;
-	 			display: inline;
+	 			display: inline-block;
+	 			margin-top: 10px;
 	 		}
 	 		.nav-logo{
 	 			width: 136px;
@@ -60,10 +61,55 @@
 	 		}
 	 		.nav-search-icon{
 	 			width: 56px;
-	 			height: 46px;
+	 			height: 44px;
 	 			padding: 11px 4px 11px 4px;
 	 			color: rgba(0, 0, 0, .847);
+	 			background-color: #ffffff;
 	 			vertical-align: middle;
+	 			border: 1px solid transparent;
+	 			border-top-left-radius: 8px;
+	 			border-bottom-left-radius: 8px;
+
+	 		}
+	 		.nav-search-bar{
+	 			width: 100% !important;
+	 			max-width: 513px;
+	 			height: 44px;
+	 			border: 0;
+	 			border-radius: 0;
+	 			color: rgba(0, 0, 0, .847);
+	 			box-sizing: border-box;
+	 			background-color: #ffffff;
+	 			padding: 11px 0;
+	 			margin-right:0px !important;
+
+	 		}
+	 		.nav-search-box{
+	 			width: 627px;
+	 			height: 46px;
+	 			background-color: white;
+	 			border: 1px solid transparent;
+	 			border-radius: 8px;
+	 		}
+	 		.nav-search-tri-box{
+	 			width: 56px;
+	 			height: 44px;
+	 			padding: 11px 4px 11px 4px;
+	 			color: rgba(0, 0, 0, .847);
+	 			background-color: #ffffff;
+	 			vertical-align: middle;
+	 			border: 1px solid transparent;
+	 			border-top-right-radius: 8px;
+	 			border-bottom-right-radius: 8px;
+	 		}
+	 		.nav-search-tri-grey{
+	 			width: 24px;
+	 			height: 24px;
+	 			color: #5f6368;
+	 			background-color: rgba(60, 64, 67, .1);
+	 			border-radius: 50%;
+	 			vertical-align: middle;
+	 			margin: auto;
 	 		}
 	 	</style>
 	</head>
@@ -107,17 +153,17 @@
 			    	</li>
 			  	</ul>
 			  	<!-- searchbox -->
-			  	<form class="form-inline my-2 my-lg-0 ">
+			  	<form class="form-inline my-2 my-lg-0 nav-search-box">
 			  		 <div class="nav-search-icon">
 			  		 	<div class="nav-search-icon-grey">
 			  		 		<i class="fa fa-search"></i>
 			  		 	</div>
 			  		 </div>
-			    	<input class="form-control mr-sm-2" type="search" placeholder="搜尋雲端硬碟" aria-label="Search">
-			    	<div class="nav-search-tri">
+			    	<input class="form-control nav-search-bar" type="search" placeholder="搜尋雲端硬碟" aria-label="Search">
+			    	<div class="nav-search-tri-box">
 			  		 	<div class="nav-search-tri-grey">
 			  		 		<div class="nav-search-tri">
-			  		 			
+			  		 			<svg height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
 			  		 		</div>
 			  		 	</div>
 			  		 </div>
